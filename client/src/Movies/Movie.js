@@ -6,7 +6,7 @@ const Movie = (props) => {
   const [movie, setMovie] = useState();
   const params = useParams();
 
- const id = movie.find(thing=> `${thing.id}` === params.id);
+ const id = params.id;
 
 
   useEffect(() => {
